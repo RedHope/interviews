@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/sorting/selectionSort.js"
+            "program": "${workspaceFolder}/sorting/insertionSort.js"
         }
     ]
 }
