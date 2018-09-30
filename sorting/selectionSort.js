@@ -17,7 +17,8 @@ const swap = require('./swap');
  * that the first value in the iteration is sorted. We do not have to worry about
  * the already sorted part of the array.
  */
-(function(arr) {
+
+module.exports = function(arr) {
   for (i = 0; i < arr.length - 2; i++) {
     let minIndex = i;
     for (j = i + 1; j < arr.length - 1; j++) {
@@ -27,6 +28,5 @@ const swap = require('./swap');
     }
     [arr[minIndex], arr[i]] = swap(arr[minIndex], arr[i]);
   }
-
-  assert.deepStrictEqual(arr, expectedOutcome);
-})(unsortedArray);
+  return arr;
+};
