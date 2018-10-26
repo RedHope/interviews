@@ -23,7 +23,7 @@ class Stack {
   }
 
   pop() {
-    this.stack.splice(this.size() - 1);
+    return this.stack.splice(this.size() - 1);
   }
 
   getStack() {
