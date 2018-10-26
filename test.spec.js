@@ -17,4 +17,11 @@ describe('interview tests', () => {
       assert.deepStrictEqual(insertionSort(unsortedArray), expectedOutcome);
     });
   });
+
+  describe('#hanoi', () => {
+    it('moves the stacks', () => {
+      const hanoi = require('./hanoi');
+      assert.deepStrictEqual(hanoi([[3, 2, 1], [], []]), [[], [], [3, 2, 1]])
+    })
+  });
 });
