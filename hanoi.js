@@ -57,11 +57,4 @@ module.exports = function(a, b, c) {
   }
 
   return [[], [], move(3, 'A', 'B', 'C')];
-
-  // val = A.pop();
-  // C.push(val);
-  // if(A.pop() > C.last()){ B.push(A.pop())}
-  //
-
-  return [A.getStack(), B.getStack(), C.getStack()];
 };
