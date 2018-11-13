@@ -1,4 +1,5 @@
 const assert = require('assert');
+const { factorial } = require('./practice');
 describe('interview tests', () => {
   describe('#insertionSort', () => {
     it('sorts the input array', () => {
@@ -18,10 +19,17 @@ describe('interview tests', () => {
     });
   });
 
-  describe('#hanoi', () => {
+  xdescribe('#hanoi', () => {
     it('moves the stacks', () => {
       const hanoi = require('./hanoi');
-      assert.deepStrictEqual(hanoi([[3, 2, 1], [], []]), [[], [], [3, 2, 1]])
-    })
+      assert.deepStrictEqual(hanoi([[3, 2, 1], [], []]), [[], [], [3, 2, 1]]);
+    });
+  });
+
+  describe('#factorial', () => {
+    it('returns factorial of the number', () => {
+      assert.equal(factorial(3), 6);
+      assert.equal(factorial(5), 120);
+    });
   });
 });
